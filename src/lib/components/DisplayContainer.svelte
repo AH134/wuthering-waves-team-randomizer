@@ -1,9 +1,9 @@
 <script lang="ts">
     import EmptyCard from "./EmptyCard.svelte";
     import Card from "./Card.svelte";
-    import type { Character } from "../types/types";
+    import type { SelectedCharacter } from "../stores/characters.svelte";
     type Props = {
-        randomizedCharacters: Character[];
+        randomizedCharacters: SelectedCharacter[];
     };
 
     let { randomizedCharacters }: Props = $props();
@@ -13,7 +13,7 @@
     {#each Array(3) as _, index (index)}
         {#if randomizedCharacters[index]}
             <Card
-                {...randomizedCharacters[index] as Character}
+                {...randomizedCharacters[index]}
                 mode="readonly"
                 delay={index}
             />

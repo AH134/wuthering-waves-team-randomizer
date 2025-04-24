@@ -1,28 +1,24 @@
 <script lang="ts">
     import { fly } from "svelte/transition";
-    import {
-        getCharacterImage,
-        getWeaponImage,
-        getAttributeImage,
-    } from "../utils/imageLoader";
-    import type { Character } from "../types/types";
+    import type { SelectedCharacter } from "../stores/characters.svelte";
 
-    type Props = Character & {
+    type Props = SelectedCharacter & {
         mode: "readonly" | "interactive";
         delay?: number;
-        selected?: boolean;
         onclick?: () => void;
     };
 
     let {
-        slug,
         displayName,
         weapon,
         rarity,
         attribute,
         mode,
         delay = 0,
-        selected = true,
+        charSrc,
+        attributeSrc,
+        selected,
+        weaponSrc,
         onclick,
     }: Props = $props();
     type RarityColor = {
@@ -42,14 +38,14 @@
                 class="h-8 w-8"
                 width="32"
                 height="32"
-                src={getAttributeImage(attribute[0])}
+                src={attributeSrc}
                 alt={attribute[0]}
             />
         </div>
         <div class="aspect-square w-full">
             <img
                 class="h-full w-full object-cover"
-                src={getCharacterImage(slug)}
+                src={charSrc}
                 alt={displayName}
             />
         </div>
@@ -75,7 +71,7 @@
             class="h-4 w-4 sm:h-5 sm:w-5"
             height="16"
             width="16"
-            src={getWeaponImage(weapon)}
+            src={weaponSrc}
             alt={weapon}
         />
     </div>

@@ -1,12 +1,14 @@
 <script lang="ts">
-    import { type Character } from "./lib/types/types";
     import Card from "./lib/components/Card.svelte";
     import DisplayContainer from "./lib/components/DisplayContainer.svelte";
-    import { selectedCharacters } from "./lib/stores/characters.svelte";
+    import {
+        selectedCharacters,
+        type SelectedCharacter,
+    } from "./lib/stores/characters.svelte";
     import { shuffle } from "./lib/utils/shuffle";
     import { MAX_RANDOMIZED_CHARACTERS } from "./lib/utils/const";
 
-    let randomizedCharacters: Character[] = $state([]);
+    let randomizedCharacters: SelectedCharacter[] = $state([]);
 
     const generateRandomizedCharacters = () => {
         randomizedCharacters = [];
@@ -46,7 +48,7 @@
                     randomizedCharacters={randomizedCharacters.slice(
                         start,
                         start + 3,
-                    ) as Character[]}
+                    )}
                 />
             {/each}
         {/key}
