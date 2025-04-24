@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="flex items-center justify-between overflow-hidden p-1">
-        <p class="truncate text-xs sm:text-sm">
+        <p class="truncate">
             {props.displayName}
         </p>
         <img

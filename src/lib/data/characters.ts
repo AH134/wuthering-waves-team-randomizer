@@ -105,7 +105,7 @@ export const characters: Character[] = [
     },
     {
         id: "danjin",
-        displayName: "danjin",
+        displayName: "Danjin",
         weapon: "sword",
         rarity: 4,
         attribute: ["havoc"],

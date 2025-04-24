@@ -59,6 +59,6 @@
         </div>
     </div>
     <div class="flex items-center justify-center overflow-hidden p-1">
-        <p class="truncate text-center text-xs sm:text-sm">--</p>
+        <p class="truncate text-center">--</p>
     </div>
 </div>
