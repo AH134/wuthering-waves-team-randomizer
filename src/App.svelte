@@ -1,6 +1,6 @@
 <script lang="ts">
     import { characters, type Character } from "./lib/data/characters";
-    import SelectableCard from "./lib/components/SelectableCard.svelte";
+    import Card from "./lib/components/Card.svelte";
     import DisplayContainer from "./lib/components/DisplayContainer.svelte";
 
     const MAX_RANDOMIZED_CHARACTERS = 9;
@@ -57,7 +57,7 @@
             Wuthering Waves Randomizer
         </h1>
     </div>
-    <div class="align-middllle flex flex-wrap justify-center gap-3">
+    <div class="flex flex-wrap justify-center gap-3 align-middle">
         {#key randomizedCharacters}
             {#each [0, 3, 6] as start (start)}
                 <DisplayContainer
@@ -94,8 +94,9 @@
     </div>
     <div class="inline-flex flex-wrap justify-center gap-2">
         {#each filteredCharacters as char (char.displayName)}
-            <SelectableCard
+            <Card
                 {...char}
+                mode="interactive"
                 selected={char.selected}
                 onclick={() => (char.selected = !char.selected)}
             />

@@ -3,10 +3,11 @@
 @font-face {
     font-family: "LaguSansBold";
     src: url("/src/assets/LaguSansBold.otf") format("opentype");
+    font-display: swap;
 }
 
 body {
-    font-family: "LaguSansBold";
+    font-family: "LaguSansBold", sans-serif;
     background: #121212;
     background-image: radial-gradient(
         circle at 1px 1px,

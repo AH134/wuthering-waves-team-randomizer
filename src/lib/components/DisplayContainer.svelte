@@ -1,12 +1,7 @@
 <script lang="ts">
     import type { Character } from "../data/characters";
-    import DisplayCard from "./DisplayCard.svelte";
     import EmptyCard from "./EmptyCard.svelte";
-    import {
-        getCharacterImage,
-        getWeaponImage,
-        getAttributeImage,
-    } from "../utils/imageLoader";
+    import Card from "./Card.svelte";
     type Props = {
         randomizedCharacters: Character[];
     };
@@ -17,13 +12,9 @@
 <div class="flex gap-1">
     {#each Array(3) as _, index (index)}
         {#if randomizedCharacters[index]}
-            <DisplayCard
+            <Card
                 {...randomizedCharacters[index] as Character}
-                characterSrc={getCharacterImage(randomizedCharacters[index].id)}
-                weaponSrc={getWeaponImage(randomizedCharacters[index].weapon)}
-                attributeSrc={getAttributeImage(
-                    randomizedCharacters[index].attribute[0],
-                )}
+                mode="readonly"
                 delay={index}
             />
         {:else}
