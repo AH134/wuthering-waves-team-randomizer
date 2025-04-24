@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "LaguSansBold";
+    src: url("/src/assets/LaguSansBold.otf") format("opentype");
+}
+
+body {
+    font-family: "LaguSansBold";
+    background: #121212;
+    background-image: radial-gradient(
+        circle at 1px 1px,
+        #313131 1px,
+        transparent 0
+    );
+    background-size: 40px 40px;
+}
+
+#app {
+    min-height: 100vh;
+    color: white;
+}
