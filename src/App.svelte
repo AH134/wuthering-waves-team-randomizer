@@ -19,6 +19,17 @@
             .includes(false),
     );
 
+    const toggleSelection = () => {
+        filteredCharacters = filteredCharacters.map((character) => {
+            return { ...character, selected: !isAllSelected };
+        });
+    };
+
+    const resetFilters = () => {
+        randomizedCharacters = [];
+        toggleSelection();
+    };
+
     const generateRandomizedCharacters = () => {
         randomizedCharacters = [];
         const selectableCharacters = filteredCharacters.filter(
@@ -72,11 +83,8 @@
     <div class="mt-4 mb-10 flex flex-wrap justify-center gap-2 sm:grid-cols-3">
         <button
             class="h-12 w-28 cursor-pointer rounded-md border-2 border-zinc-800 p-1 hover:bg-zinc-700/20"
-            onclick={() => {
-                filteredCharacters = filteredCharacters.map((character) => {
-                    return { ...character, selected: !isAllSelected };
-                });
-            }}>{isAllSelected ? "Deselect all" : "Select all"}</button
+            onclick={toggleSelection}
+            >{isAllSelected ? "Deselect all" : "Select all"}</button
         >
         <button
             class="h-12 w-38 cursor-pointer rounded-tl-md rounded-br-md bg-zinc-100 p-1 text-zinc-900 transition-all hover:bg-white"
@@ -84,12 +92,7 @@
         >
         <button
             class="h-12 w-28 cursor-pointer rounded-md border-2 border-zinc-800 p-1 hover:bg-zinc-700/20"
-            onclick={() => {
-                filteredCharacters = filteredCharacters.map((character) => {
-                    return { ...character, selected: true };
-                });
-                randomizedCharacters = [];
-            }}>Reset</button
+            onclick={resetFilters}>Reset</button
         >
     </div>
     <div class="inline-flex flex-wrap justify-center gap-2">
