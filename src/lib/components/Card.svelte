@@ -1,11 +1,11 @@
 <script lang="ts">
     import { fly } from "svelte/transition";
-    import type { Character } from "../data/characters";
     import {
         getCharacterImage,
         getWeaponImage,
         getAttributeImage,
     } from "../utils/imageLoader";
+    import type { Character } from "../types/types";
 
     type Props = Character & {
         mode: "readonly" | "interactive";
@@ -16,6 +16,7 @@
 
     let {
         id,
+        slug,
         displayName,
         weapon,
         rarity,
@@ -49,7 +50,7 @@
         <div class="aspect-square w-full">
             <img
                 class="h-full w-full object-cover"
-                src={getCharacterImage(id)}
+                src={getCharacterImage(slug)}
                 alt={displayName}
             />
         </div>

@@ -1,16 +1,13 @@
 <script lang="ts">
-    import { characters, type Character } from "./lib/data/characters";
+    import { characters } from "./lib/data/characters";
+    import { type Character } from "./lib/types/types";
     import Card from "./lib/components/Card.svelte";
     import DisplayContainer from "./lib/components/DisplayContainer.svelte";
 
     const MAX_RANDOMIZED_CHARACTERS = 9;
     type FilteredCharacter = Character & { selected: boolean };
 
-    let filteredCharacters: FilteredCharacter[] = $state(
-        characters.map((character) => {
-            return { ...character, selected: true };
-        }),
-    );
+    let filteredCharacters: FilteredCharacter[] = $state(characters);
 
     let randomizedCharacters: FilteredCharacter[] = $state([]);
     let isAllSelected = $derived(
@@ -97,6 +94,8 @@
             onclick={resetFilters}>Reset</button
         >
     </div>
+
+    <div></div>
     <div class="inline-flex flex-wrap justify-center gap-2">
         {#each filteredCharacters as char (char.displayName)}
             <Card
