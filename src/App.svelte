@@ -27,7 +27,9 @@
 
     const resetFilters = () => {
         randomizedCharacters = [];
-        toggleSelection();
+        if (!isAllSelected) {
+            toggleSelection();
+        }
     };
 
     const generateRandomizedCharacters = () => {
