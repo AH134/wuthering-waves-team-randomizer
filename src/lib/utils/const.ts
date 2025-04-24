@@ -1,5 +1,7 @@
 import type { Attribute, Gender, Rarity, Weapon } from "../types/types";
 
+export const MAX_RANDOMIZED_CHARACTERS = 9;
+
 export const weaponNames: Weapon[] = [
     "broadblade",
     "gauntlet",

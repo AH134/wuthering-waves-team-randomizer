@@ -9,7 +9,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["aero"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 1,
@@ -19,7 +19,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["glacio"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["fusion"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 3,
@@ -39,7 +39,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["electro"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 4,
@@ -49,7 +49,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["havoc"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 5,
@@ -59,7 +59,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["havoc"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 6,
@@ -69,7 +69,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["glacio"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 7,
@@ -79,7 +79,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["fusion"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 8,
@@ -89,7 +89,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["fusion"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 9,
@@ -99,7 +99,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["aero"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 10,
@@ -109,7 +109,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["havoc"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 11,
@@ -119,7 +119,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["fusion"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["aero"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 13,
@@ -139,7 +139,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 14,
@@ -149,7 +149,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["aero"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 15,
@@ -159,7 +159,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["glacio"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 16,
@@ -169,7 +169,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["electro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 17,
@@ -179,7 +179,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["fusion"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 18,
@@ -189,7 +189,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 19,
@@ -199,7 +199,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["havoc"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 20,
@@ -209,7 +209,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["aero"],
         gender: ["female", "male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 21,
@@ -219,7 +219,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["havoc"],
         gender: ["female", "male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 22,
@@ -229,7 +229,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female", "male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 23,
@@ -239,7 +239,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["glacio"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 24,
@@ -249,7 +249,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 25,
@@ -259,7 +259,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["havoc"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 26,
@@ -269,7 +269,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 27,
@@ -279,7 +279,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["electro"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 28,
@@ -289,7 +289,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["aero"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 29,
@@ -299,7 +299,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["electro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 30,
@@ -309,7 +309,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["glacio"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 31,
@@ -319,7 +319,7 @@ export const characters: Character[] = [
         rarity: 4,
         attribute: ["electro"],
         gender: ["male"],
-        selected: false,
+        selected: true,
     },
     {
         id: 32,
@@ -329,7 +329,7 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["spectro"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
     {
         id: 33,
@@ -339,6 +339,6 @@ export const characters: Character[] = [
         rarity: 5,
         attribute: ["glacio"],
         gender: ["female"],
-        selected: false,
+        selected: true,
     },
 ];

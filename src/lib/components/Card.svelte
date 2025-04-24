@@ -15,7 +15,6 @@
     };
 
     let {
-        id,
         slug,
         displayName,
         weapon,

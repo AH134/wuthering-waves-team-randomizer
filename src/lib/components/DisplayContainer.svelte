@@ -1,7 +1,7 @@
 <script lang="ts">
-    import type { Character } from "../data/characters";
     import EmptyCard from "./EmptyCard.svelte";
     import Card from "./Card.svelte";
+    import type { Character } from "../types/types";
     type Props = {
         randomizedCharacters: Character[];
     };

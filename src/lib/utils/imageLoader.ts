@@ -4,19 +4,13 @@ const enum ImagePath {
     ATTRIBUTES = "/src/lib/images/attributes/*.webp",
 }
 
-const characterImages = import.meta.glob<{ default: string }>(
-    ImagePath.CHARACTERS,
-    { eager: true },
-);
-const weaponImages = import.meta.glob<{ default: string }>(ImagePath.WEAPONS, {
+const characterImages = import.meta.glob(ImagePath.CHARACTERS, { eager: true });
+const weaponImages = import.meta.glob(ImagePath.WEAPONS, {
     eager: true,
 });
-const attributeImages = import.meta.glob<{ default: string }>(
-    ImagePath.ATTRIBUTES,
-    {
-        eager: true,
-    },
-);
+const attributeImages = import.meta.glob(ImagePath.ATTRIBUTES, {
+    eager: true,
+});
 
 const createImageMap = (
     imageModules: Record<string, any>,
