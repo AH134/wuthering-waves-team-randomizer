@@ -33,12 +33,12 @@
     <div class="mb-8 text-center">
         <a
             class="text-sm text-zinc-300 hover:text-zinc-200 md:text-base"
-            href="https://github.com/ah134/wuwa-randomizer"
+            href="https://github.com/ah134/wuthering-waves-team-randomizer"
             target="_blank">Github Repository</a
         >
 
         <h1 class="text-xl text-zinc-100 md:text-3xl">
-            Wuthering Waves Randomizer
+            Wuthering Waves Team Randomizer
         </h1>
     </div>
     <div class="flex flex-wrap justify-center gap-3 align-middle">
