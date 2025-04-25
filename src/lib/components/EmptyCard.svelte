@@ -58,7 +58,7 @@
             <div class="h-0.5 bg-zinc-200"></div>
         </div>
     </div>
-    <div class="flex items-center justify-center overflow-hidden p-1">
-        <p class="truncate text-center">--</p>
+    <div class="flex justify-center p-1">
+        <b>--</b>
     </div>
 </div>

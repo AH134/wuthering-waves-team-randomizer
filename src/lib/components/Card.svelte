@@ -82,6 +82,7 @@
         class="group relative w-24 cursor-pointer rounded border-2 border-zinc-800 bg-zinc-900 transition-all sm:w-32 {selected
             ? 'grayscale-0'
             : 'grayscale-100'}"
+        type="button"
         {onclick}
     >
         {@render card()}
