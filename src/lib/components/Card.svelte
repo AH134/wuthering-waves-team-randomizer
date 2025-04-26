@@ -1,8 +1,8 @@
 <script lang="ts">
     import { fly } from "svelte/transition";
-    import type { SelectedCharacter } from "../stores/characters.svelte";
+    import type { CharacterCard } from "../stores/characters.svelte";
 
-    type Props = SelectedCharacter & {
+    type Props = CharacterCard & {
         mode: "readonly" | "interactive";
         delay?: number;
         onclick?: () => void;
