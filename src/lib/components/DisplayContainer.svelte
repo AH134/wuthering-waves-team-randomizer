@@ -1,9 +1,9 @@
 <script lang="ts">
     import EmptyCard from "./EmptyCard.svelte";
     import Card from "./Card.svelte";
-    import type { SelectedCharacter } from "../stores/characters.svelte";
+    import type { CharacterCard } from "../stores/characters.svelte";
     type Props = {
-        randomizedCharacters: SelectedCharacter[];
+        randomizedCharacters: CharacterCard[];
     };
 
     let { randomizedCharacters }: Props = $props();

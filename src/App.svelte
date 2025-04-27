@@ -3,12 +3,12 @@
     import DisplayContainer from "./lib/components/DisplayContainer.svelte";
     import {
         selectedCharacters,
-        type SelectedCharacter,
+        type CharacterCard,
     } from "./lib/stores/characters.svelte";
     import { shuffle } from "./lib/utils/shuffle";
     import { MAX_RANDOMIZED_CHARACTERS } from "./lib/utils/const";
 
-    let randomizedCharacters: SelectedCharacter[] = $state([]);
+    let randomizedCharacters: CharacterCard[] = $state([]);
 
     const generateRandomizedCharacters = () => {
         randomizedCharacters = [];
@@ -83,7 +83,10 @@
                 {...char}
                 mode="interactive"
                 selected={char.selected}
-                onclick={() => (char.selected = !char.selected)}
+                onclick={() => {
+                    char.selected = !char.selected;
+                    selectedCharacters.saveToLocal();
+                }}
             />
         {/each}
     </div>
