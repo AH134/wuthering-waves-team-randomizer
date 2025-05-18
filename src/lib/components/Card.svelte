@@ -36,6 +36,7 @@
         <div class="absolute aspect-square">
             <img
                 class="h-8 w-8"
+                draggable="false"
                 width="32"
                 height="32"
                 src={attributeSrc}
@@ -45,6 +46,7 @@
         <div class="aspect-square w-full">
             <img
                 class="h-full w-full object-cover"
+                draggable="false"
                 src={charSrc}
                 alt={displayName}
             />
@@ -69,6 +71,7 @@
         </p>
         <img
             class="h-4 w-4 sm:h-5 sm:w-5"
+            draggable="false"
             height="16"
             width="16"
             src={weaponSrc}
