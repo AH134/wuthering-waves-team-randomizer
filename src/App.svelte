@@ -88,7 +88,7 @@
         {/each}
     </div>
 
-    <div class="inline-flex flex-wrap justify-center gap-2">
+    <div class="flex flex-wrap justify-center gap-2">
         {#each selectedCharacters.selectedValue as char (char.id)}
             <Card
                 {...char}
