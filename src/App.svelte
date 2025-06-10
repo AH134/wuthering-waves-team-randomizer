@@ -30,18 +30,19 @@
     };
 </script>
 
-<main class="p-2">
-    <div class="mb-8 text-center">
-        <a
-            class="text-sm text-zinc-300 hover:text-zinc-200 md:text-base"
-            href="https://github.com/ah134/wuthering-waves-team-randomizer"
-            target="_blank">Github Repository</a
-        >
+<header class="mb-8 text-center">
+    <a
+        class="text-sm text-zinc-300 hover:text-zinc-200 md:text-base"
+        href="https://github.com/ah134/wuthering-waves-team-randomizer"
+        target="_blank">Github Repository</a
+    >
 
-        <h1 class="text-xl text-zinc-100 md:text-3xl">
-            Wuthering Waves Team Randomizer
-        </h1>
-    </div>
+    <h1 class="text-xl text-zinc-100 md:text-3xl">
+        Wuthering Waves Team Randomizer
+    </h1>
+</header>
+
+<main class="p-2">
     <div class="flex flex-wrap justify-center gap-3 align-middle">
         {#key randomizedCharacters}
             {#each [0, 3, 6] as start (start)}
@@ -63,16 +64,13 @@
                 : "Select all"}</button
         >
         <button
-            class="h-12 w-38 cursor-pointer rounded-tl-md rounded-br-md bg-zinc-100 p-1 text-zinc-900 transition-all hover:bg-white"
+            class="h-12 w-36 cursor-pointer rounded-tl-md rounded-br-md bg-zinc-100 p-1 text-zinc-900 transition-all hover:bg-white"
             onclick={generateRandomizedCharacters}>Generate teams</button
         >
         <button
-            class=" h-12 w-28 cursor-pointer rounded-md border-2 border-zinc-800 bg-zinc-950 p-1 transition-all hover:bg-zinc-900"
+            class="h-12 w-28 cursor-pointer rounded-md border-2 border-zinc-800 bg-zinc-950 p-1 transition-all hover:bg-zinc-900"
             onclick={() => {
                 randomizedCharacters = [];
-                if (!selectedCharacters.isAllSelected) {
-                    selectedCharacters.toggleAll();
-                }
             }}>Reset</button
         >
     </div>
