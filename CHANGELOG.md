@@ -15,3 +15,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated name in package.json to wuwa-team-randomizer
 - Updated README.md to include changelog and license information
+
+[1.2.2]: https://github.com/AH134/wuwa-team-randomizer/releases/tag/v1.2.2
