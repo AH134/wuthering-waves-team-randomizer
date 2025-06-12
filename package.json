@@ -1,7 +1,7 @@
 {
-  "name": "wuthering-waves-team-randomizer",
+  "name": "wuwa-team-randomizer",
   "private": true,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
