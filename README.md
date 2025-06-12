@@ -11,5 +11,8 @@ Select or deselect character cards and click "Generate teams."
 ## Motivation
 I wanted to learn Svelte and built this app. It is inspired by [Genshin Impact Team Randomizer](https://genshin-impact-team-randomizer.pages.dev/).
 
+## Changelog
+[CHANGELOG](CHANGELOG.md)
+
 ## License
-MIT
+[MIT](LICENSE)
